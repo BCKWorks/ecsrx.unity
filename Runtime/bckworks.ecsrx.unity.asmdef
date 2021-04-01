@@ -1,5 +1,6 @@
 {
-    "name": "intervr.ts.ecsrx.unity",
+    "name": "bckworks.ecsrx.unity",
+    "rootNamespace": "",
     "references": [
         "GUID:0715616b45e7840468dd5ab65e52f66d",
         "GUID:560b04d1a97f54a4e82edc0cbbb69285",
