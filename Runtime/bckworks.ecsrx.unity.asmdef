@@ -2,9 +2,9 @@
     "name": "bckworks.ecsrx.unity",
     "rootNamespace": "",
     "references": [
-        "GUID:0715616b45e7840468dd5ab65e52f66d",
-        "GUID:560b04d1a97f54a4e82edc0cbbb69285",
-        "GUID:0d8beb7f090555447a6cf5ce9e54dbb4"
+        "GUID:2f0648f2fd043094085373922f43826e",
+        "GUID:412f5501a8386a24e90f72bf2239de4e",
+        "GUID:c43909855375f1444acc6045e8ef156d"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],
