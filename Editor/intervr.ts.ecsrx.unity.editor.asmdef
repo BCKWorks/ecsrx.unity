@@ -1,0 +1,19 @@
+{
+    "name": "intervr.ts.ecsrx.unity.editor",
+    "references": [
+        "GUID:0715616b45e7840468dd5ab65e52f66d",
+        "GUID:3cc535e08f4df0e42aed273951c09fbe",
+        "GUID:560b04d1a97f54a4e82edc0cbbb69285"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
