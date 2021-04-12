@@ -1,6 +1,12 @@
 # Changelog
 All notable changes to this package will be documented in this file.
 
+## [1.1.4] - 2021-04-12
+
+### Removed
+
+- Remove RegisterAsEntity Custom Inspector
+
 ## [1.1.3] - 2021-04-03
 
 ### Updated
