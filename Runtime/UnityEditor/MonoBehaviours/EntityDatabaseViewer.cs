@@ -2,7 +2,7 @@
 using UnityEngine;
 using Zenject;
 
-namespace EcsRx.UnityEditor.MonoBehaviours
+namespace EcsRx.Unity.MonoBehaviours
 {
     public class EntityDatabaseViewer : MonoBehaviour
     {

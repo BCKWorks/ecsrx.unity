@@ -5,7 +5,7 @@ using UnityEditor.SceneManagement;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-namespace EcsRx.UnityEditor.Editor.Extensions
+namespace EcsRx.Unity.EditorCode.Extensions
 {
     public static class EditorExtensions
     {

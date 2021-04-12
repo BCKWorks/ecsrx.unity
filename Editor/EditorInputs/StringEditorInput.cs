@@ -1,7 +1,7 @@
 #if UNITY_EDITOR
 using UnityEditor;
 
-namespace EcsRx.UnityEditor.Editor.EditorInputs
+namespace EcsRx.Unity.EditorCode.EditorInputs
 {
     public class StringEditorInput : SimpleEditorInput<string>
     {

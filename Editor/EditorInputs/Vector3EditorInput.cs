@@ -2,7 +2,7 @@
 using UnityEditor;
 using UnityEngine;
 
-namespace EcsRx.UnityEditor.Editor.EditorInputs
+namespace EcsRx.Unity.EditorCode.EditorInputs
 {
     public class Vector3EditorInput : SimpleEditorInput<Vector3>
     {

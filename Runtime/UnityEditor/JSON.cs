@@ -48,7 +48,7 @@ using System.Linq;
 using System.Text;
 using UnityEngine;
 
-namespace EcsRx.UnityEditor {
+namespace EcsRx.Unity {
 
     [AttributeUsage(AttributeTargets.Property)]
     public class JsonProperty : Attribute

@@ -10,13 +10,13 @@ using EcsRx.Entities;
 using EcsRx.Extensions;
 using EcsRx.Plugins.Views.Components;
 using EcsRx.Unity.MonoBehaviours;
-using EcsRx.UnityEditor.Extensions;
+using EcsRx.Unity.Extensions;
 using EcsRx.Zenject;
 using UnityEngine;
 using UnityEngine.Serialization;
 using Zenject;
 
-namespace EcsRx.UnityEditor.MonoBehaviours
+namespace EcsRx.Unity.MonoBehaviours
 {
     public abstract class RegisterAsEntity : MonoBehaviour, IConvertToEntity
     {

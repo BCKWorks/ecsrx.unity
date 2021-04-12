@@ -4,14 +4,14 @@ using EcsRx.Extensions;
 using EcsRx.Plugins.Views.Components;
 using EcsRx.Systems;
 using EcsRx.Unity.Extensions;
-using EcsRx.UnityEditor.Editor.Extensions;
-using EcsRx.UnityEditor.Editor.UIAspects;
-using EcsRx.UnityEditor.MonoBehaviours;
+using EcsRx.Unity.EditorCode.Extensions;
+using EcsRx.Unity.EditorCode.UIAspects;
+using EcsRx.Unity.MonoBehaviours;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEditor;
 
-namespace EcsRx.UnityEditor.Editor
+namespace EcsRx.Unity.EditorCode
 {
     [CustomEditor(typeof(ActiveSystemsViewer))]
     public class ActiveSystemsViewerInspector : global::UnityEditor.Editor

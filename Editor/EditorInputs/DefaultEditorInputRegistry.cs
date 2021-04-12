@@ -2,7 +2,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace EcsRx.UnityEditor.Editor.EditorInputs
+namespace EcsRx.Unity.EditorCode.EditorInputs
 {
     public static class DefaultEditorInputRegistry
     {

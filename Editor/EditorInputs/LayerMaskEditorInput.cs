@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
 
-namespace EcsRx.UnityEditor.Editor.EditorInputs
+namespace EcsRx.Unity.EditorCode.EditorInputs
 {
     public class LayerMaskEditorInput : SimpleEditorInput<LayerMask>
     {

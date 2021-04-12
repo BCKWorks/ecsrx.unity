@@ -2,7 +2,7 @@
 using UniRx;
 using UnityEditor;
 
-namespace EcsRx.UnityEditor.Editor.EditorInputs
+namespace EcsRx.Unity.EditorCode.EditorInputs
 {
     public class ReactiveVector3EditorInput : SimpleEditorInput<Vector3ReactiveProperty>
     {

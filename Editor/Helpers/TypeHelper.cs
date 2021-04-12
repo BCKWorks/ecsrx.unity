@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Linq;
 
-namespace EcsRx.UnityEditor.Editor.Helpers
+namespace EcsRx.Unity.EditorCode.Helpers
 {
     public class TypeHelper
     {

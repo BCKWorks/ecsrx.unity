@@ -1,6 +1,6 @@
 using System;
 
-namespace EcsRx.UnityEditor.Editor.EditorInputs
+namespace EcsRx.Unity.EditorCode.EditorInputs
 {
     public abstract class SimpleEditorInput<T> : IEditorInput
     {

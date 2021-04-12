@@ -2,13 +2,13 @@
 using System;
 using EcsRx.Components;
 using EcsRx.Entities;
-using EcsRx.UnityEditor.Editor.EditorInputs;
-using EcsRx.UnityEditor.Editor.Helpers;
-using EcsRx.UnityEditor.Extensions;
+using EcsRx.Unity.EditorCode.EditorInputs;
+using EcsRx.Unity.EditorCode.Helpers;
+using EcsRx.Unity.Extensions;
 using UnityEditor;
 using UnityEngine;
 
-namespace EcsRx.UnityEditor.Editor.UIAspects
+namespace EcsRx.Unity.EditorCode.UIAspects
 {
     public class ComponentUIAspect
     {

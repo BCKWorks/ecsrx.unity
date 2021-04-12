@@ -2,7 +2,7 @@
 using UniRx;
 using UnityEngine;
 
-namespace EcsRx.UnityEditor.Extensions
+namespace EcsRx.Unity.Extensions
 { 
 	public static class ComponentExtensions
 	{
