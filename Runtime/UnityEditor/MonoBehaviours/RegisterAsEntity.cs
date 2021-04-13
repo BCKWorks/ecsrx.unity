@@ -22,8 +22,6 @@ namespace EcsRx.Unity.MonoBehaviours
     {
         public IEntityDatabase EntityDatabase { get; private set; }
 
-        [FormerlySerializedAs("CollectionName")] 
-        [SerializeField]
         public int CollectionId;
 
         public void RegisterEntity()
@@ -51,8 +49,6 @@ namespace EcsRx.Unity.MonoBehaviours
                 SetupEntityBinding(createdEntity, collectionToUse);
                 SetupEntityComponents(createdEntity);
             }
-
-            Destroy(this);
         }
 
         IEnumerator Start()
@@ -68,6 +64,9 @@ namespace EcsRx.Unity.MonoBehaviours
 
             EntityDatabase = EcsRxApplicationBehaviour.Instance.EntityDatabase;
 
+            while (!isActiveAndEnabled)
+                yield return null;
+
             RegisterEntity();
         }
 
@@ -81,15 +80,27 @@ namespace EcsRx.Unity.MonoBehaviours
         private void SetupEntityComponents(IEntity entity)
         {
             var components = GetComponents<IConvertToEntity>();
+            if (components == null)
+            {
+                Destroy(this);
+                return;
+            }
+
             foreach (var component in components)
             {
                 component.Convert(entity);
             }
         }
 
-        public virtual void Convert(IEntity entity)
+        public virtual bool Convert(IEntity entity)
         {
-            Destroy(this);
+            if (!isActiveAndEnabled)
+            {
+                Destroy(this);
+                return false;
+            }
+
+            return true;
         }
     }
 }
