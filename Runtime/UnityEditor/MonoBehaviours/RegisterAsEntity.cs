@@ -64,9 +64,6 @@ namespace EcsRx.Unity.MonoBehaviours
 
             EntityDatabase = EcsRxApplicationBehaviour.Instance.EntityDatabase;
 
-            while (!isActiveAndEnabled)
-                yield return null;
-
             RegisterEntity();
         }
 
@@ -92,15 +89,9 @@ namespace EcsRx.Unity.MonoBehaviours
             }
         }
 
-        public virtual bool Convert(IEntity entity)
+        public virtual void Convert(IEntity entity)
         {
-            if (!isActiveAndEnabled)
-            {
-                Destroy(this);
-                return false;
-            }
-
-            return true;
+            Destroy(this);
         }
     }
 }
