@@ -1,6 +1,12 @@
 # Changelog
 All notable changes to this package will be documented in this file.
 
+## [1.1.5] - 2021-04-13
+
+### Changed
+
+- Resolves names
+
 ## [1.1.4] - 2021-04-12
 
 ### Removed
