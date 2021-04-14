@@ -40,15 +40,17 @@ namespace EcsRx.Unity.MonoBehaviours
             var entityView = gameObject.GetComponent<EntityView>();
             if (entityView != null)
             {
-                SetupEntityComponents(entityView.Entity);
+                setupEntityComponent(entityView.Entity);
             }
             else
             {
                 var createdEntity = collectionToUse.CreateEntity();
                 createdEntity.AddComponents(new ViewComponent { View = gameObject });
-                SetupEntityBinding(createdEntity, collectionToUse);
-                SetupEntityComponents(createdEntity);
+                setupEntityBinding(createdEntity, collectionToUse);
+                setupEntityComponent(createdEntity);
             }
+
+            Destroy(this);
         }
 
         IEnumerator Start()
@@ -67,31 +69,20 @@ namespace EcsRx.Unity.MonoBehaviours
             RegisterEntity();
         }
 
-        private void SetupEntityBinding(IEntity entity, IEntityCollection entityCollection)
+        private void setupEntityBinding(IEntity entity, IEntityCollection entityCollection)
         {
             var entityBinding = gameObject.AddComponent<EntityView>();
             entityBinding.Entity = entity;
             entityBinding.EntityCollection = entityCollection;
         }
 
-        private void SetupEntityComponents(IEntity entity)
+        private void setupEntityComponent(IEntity entity)
         {
-            var components = GetComponents<IConvertToEntity>();
-            if (components == null)
-            {
-                Destroy(this);
-                return;
-            }
-
-            foreach (var component in components)
-            {
-                component.Convert(entity);
-            }
+            Convert(entity);
         }
 
         public virtual void Convert(IEntity entity)
         {
-            Destroy(this);
         }
     }
 }
