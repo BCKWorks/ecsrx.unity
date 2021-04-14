@@ -1,6 +1,12 @@
 # Changelog
 All notable changes to this package will be documented in this file.
 
+## [1.1.6] - 2021-04-14
+
+### Updated
+
+- Register As Entity
+
 ## [1.1.5] - 2021-04-13
 
 ### Changed

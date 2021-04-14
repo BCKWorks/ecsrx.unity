@@ -2,7 +2,7 @@
   "name": "com.bckworks.ecsrx.unity",
   "displayName": "BCKWorks EcsRx for Unity",
   "description": "A simple framework for unity using the ECS paradigm but with unirx for fully reactive systems.",
-  "version": "1.1.5",
+  "version": "1.1.6",
   "unity": "2021.1",
   "keywords": [],
   "homepage": "https://github.com/BCKWorks/EcsRx.Unity#readme",
@@ -20,7 +20,7 @@
     "url": "https://github.com/BCKWorks"
   },
   "dependencies": {
-    "com.bckworks.ecsrx": "1.1.3",
+    "com.bckworks.ecsrx": "1.1.4",
     "com.bckworks.zenject": "1.1.2",
     "com.bckworks.unirx": "1.1.2"
   },
